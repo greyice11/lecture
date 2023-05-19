@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>My App</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('users') }}">Users</a></li>
+      </ul>
+    </nav>
+    {% block content %}{% endblock %}
+    <h1>Dashboard Lecture</h1>
+  </body>
+</html>
